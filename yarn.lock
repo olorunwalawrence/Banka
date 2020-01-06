@@ -8578,7 +8578,14 @@ react-scripts@3.3.0:
   optionalDependencies:
     fsevents "2.1.2"
 
-react@^16.12.0:
+react-scrollspy-nav@^1.2.2:
+  version "1.2.2"
+  resolved "https://registry.yarnpkg.com/react-scrollspy-nav/-/react-scrollspy-nav-1.2.2.tgz#c5524f371afe8a9a63157a61a6e24d91a3b63b45"
+  integrity sha512-Q2nMZtsmYczAMvRMMtZQfg0irtT+nldZUQuvotlyU4LgVg97i6YHQR/npz2sV/XPgDEQAfoFttKwLQMz6rZ9zA==
+  dependencies:
+    react "^16.5.0"
+
+react@^16.12.0, react@^16.5.0:
   version "16.12.0"
   resolved "https://registry.yarnpkg.com/react/-/react-16.12.0.tgz#0c0a9c6a142429e3614834d5a778e18aa78a0b83"
   integrity sha512-fglqy3k5E+81pA8s+7K0/T3DBCF0ZDOher1elBFzF7O6arXJgzyu/FW+COxFvAWXJoJN9KIZbT2LXlukwphYTA==
