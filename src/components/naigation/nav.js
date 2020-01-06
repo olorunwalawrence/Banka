@@ -1,5 +1,6 @@
 import React from 'react';
 import * as Nav from './nav.style';
+import ScrollspyNav from 'react-scrollspy-nav';
 
 export const Navigation = () => {
 	return (
@@ -8,13 +9,22 @@ export const Navigation = () => {
 				<Nav.Div color="#fff" flex="2" font-size="19px">
 					Banka
 				</Nav.Div>
-				<Nav.Nav>
-					<Nav.LI>Home</Nav.LI>
-					<Nav.LI>hellon</Nav.LI>
-					<Nav.LI>Features</Nav.LI>
-					<Nav.LI>Convert</Nav.LI>
-					<Nav.LI>About us</Nav.LI>
-				</Nav.Nav>
+
+				<ScrollspyNav
+					scrollTargetIds={['sec_1', 'sec_2', 'sec_3', 'sec_4', 'sec_5']}
+					offset={100}
+					activeNavClass="is-active"
+					scrollDuration="1000"
+					headerBackground="true"
+				>
+					<Nav.Nav>
+						<Nav.LI href="#sec_1">Home</Nav.LI>
+						<Nav.LI href="#sec_2">hellon</Nav.LI>
+						<Nav.LI href="#sec_3">Features</Nav.LI>
+						<Nav.LI href="#sec_4">Convert</Nav.LI>
+						<Nav.LI href="#sec_5">About us</Nav.LI>
+					</Nav.Nav>
+				</ScrollspyNav>
 			</Nav.Wrapper>
 			<Nav.envilop display="flex" justifyContent="center">
 				<Nav.bannerContent>

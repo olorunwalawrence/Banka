@@ -46,6 +46,7 @@ export const LI = styled.li`
 	list-style: none;
 	padding-right: 20px;
 	text-transform: uppercase;
+	cursor: pointer;
 `;
 
 export const bannerContent = styled.div`
