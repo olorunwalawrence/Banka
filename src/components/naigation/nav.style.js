@@ -5,7 +5,13 @@ export const Container = styled.div`
 	top: 0;
 	left: 0;
 	width: 100%;
+	z-index: 2;
 `;
+
+// export const Sticky = styled.div`
+// 	position: sticky;
+// 	top: 0px;
+// `;
 
 export const envilop = styled.div`
 	margin: ${props => props.margin};
@@ -17,6 +23,9 @@ export const envilop = styled.div`
 	background: ${props => props.gradient};
 	display: ${props => props.display};
 	padding-top: ${props => props.paddingTop};
+	position: ${props => props.position};
+	top: ${props => props.top};
+	z-index: ${props => props.index};
 	&:hover {
 		background: ${props => props.hoverBg};
 		color: ${props => props.hoverColor};
@@ -30,6 +39,9 @@ export const Wrapper = styled.div`
 	padding-top: 1rem;
 	width: 85%;
 	margin: 1px auto;
+	position: sticky;
+	top: 0px;
+	z-index: 3;
 `;
 export const Div = styled.div`
 	color: ${props => props.color};
@@ -70,4 +82,8 @@ export const SmallHeader = styled.h4`
 `;
 export const header = styled.h1`
 	margin: 0px;
+`;
+
+export const link = styled.a`
+	color: white;
 `;
