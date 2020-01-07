@@ -7,7 +7,7 @@ export const BankinInfo = ({ id }) => {
 		<BI.InfoContainer id={id}>
 			<BI.wrapper>
 				<BI.card>
-					<BI.fontAwesome className="far fa-registered">font</BI.fontAwesome>
+					<BI.fontAwesome src={require('../../asset/images/icons8-registration-100.png')} />
 					<BI.infoHeader>online Registration</BI.infoHeader>
 					<BI.para>
 						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
@@ -15,7 +15,7 @@ export const BankinInfo = ({ id }) => {
 					</BI.para>
 				</BI.card>
 				<BI.card>
-					<BI.fontAwesome>font</BI.fontAwesome>
+					<BI.fontAwesome src={require('../../asset/images/icons8-deposit-100.png')} />
 					<BI.infoHeader>Online Deposit </BI.infoHeader>
 					<BI.para>
 						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
@@ -23,7 +23,7 @@ export const BankinInfo = ({ id }) => {
 					</BI.para>
 				</BI.card>
 				<BI.card>
-					<BI.fontAwesome>font</BI.fontAwesome>
+					<BI.fontAwesome src={require('../../asset/images/icons8-bounced-check-100.png')} />
 					<BI.infoHeader>Check account balance online</BI.infoHeader>
 					<BI.para>
 						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut

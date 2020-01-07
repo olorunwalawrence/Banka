@@ -5,7 +5,7 @@ export const Container = styled.div`
 	top: 0;
 	left: 0;
 	width: 100%;
-	z-index: 2;
+	/* z-index: 2; */
 `;
 
 // export const Sticky = styled.div`
@@ -71,6 +71,7 @@ export const bannerContent = styled.div`
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	z-index: 5;
 `;
 
 export const Para = styled.p`

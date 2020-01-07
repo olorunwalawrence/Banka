@@ -32,34 +32,9 @@ export const Navigation = ({ id }) => {
 						<Nav.LI>
 							<Nav.link href="#sec_4">About us</Nav.link>
 						</Nav.LI>
-						<Nav.LI>
-							<Nav.link href="#sec_5">Home</Nav.link>
-						</Nav.LI>
 					</Nav.Nav>
 				</Scrollspy>
 			</Nav.Wrapper>
-			<Nav.envilop display="flex" justifyContent="center">
-				<Nav.bannerContent>
-					<Nav.SmallHeader>The best bank you can transact with.</Nav.SmallHeader>
-					<Nav.header>Banka</Nav.header>
-					<Nav.Para>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temp or incididunt ut
-						labore et dolore magna aliqua. Ut enim ad minim.
-					</Nav.Para>
-					<Nav.envilop
-						hoverBg="transparent"
-						hoverBorder="2px solid white	"
-						hoverColor="white"
-						paddingTop=".7rem"
-						width="35%"
-						height="3rem"
-						Radius=".2rem"
-						gradient="linear-gradient(0deg, #f3c400 0%, #f88845 100%)"
-					>
-						Get Started
-					</Nav.envilop>
-				</Nav.bannerContent>
-			</Nav.envilop>
 		</Nav.Container>
 	);
 };
