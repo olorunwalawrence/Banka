@@ -7,7 +7,7 @@ export const Banners = ({ children }) => {
 		<Fragment>
 			<BA.Banner></BA.Banner>
 			<BA.OverLay></BA.OverLay>
-			{/* <Navigation /> */}
+
 			{children}
 		</Fragment>
 	);

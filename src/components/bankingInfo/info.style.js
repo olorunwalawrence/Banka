@@ -7,6 +7,7 @@ export const wrapper = styled.div`
 	margin: 0px auto;
 	display: flex;
 	justify-content: space-around;
+	margin-bottom: 4rem;
 `;
 
 export const infoHeader = styled.h3`
@@ -26,8 +27,9 @@ export const card = styled.div`
 export const para = styled.p`
 	text-align: justify;
 `;
-export const fontAwesome = styled.i`
+export const fontAwesome = styled.img`
 	text-align: center;
+	padding-left: 5rem;
 `;
 
 export const secondSectionWrapper = styled.div`
@@ -54,7 +56,7 @@ export const Animationcard = styled.div`
 	position: relative;
 	top: -290px;
 	height: 210px;
-	width: 32%;
+	width: 31%;
 	margin: 1px auto;
 	color: white;
 	border-radius: 100px;
@@ -62,7 +64,7 @@ export const Animationcard = styled.div`
 
 export const Img = styled.img`
 	margin: 35px;
-	padding-left: 20px;
+	padding-left: 28px;
 `;
 
 export const Title = styled.h1`
@@ -75,4 +77,6 @@ export const InfoWrapper = styled.div`
 	width: 80%;
 	padding-left: 40px;
 	color: white;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	line-height: 1.5;
 `;

@@ -1,18 +1,17 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-	position: absolute;
+	position: sticky;
 	top: 0;
 	left: 0;
 	width: 100%;
 	z-index: 2;
+	background: #777777;
+	opacity: 0.7;
 `;
-
-// export const Sticky = styled.div`
-// 	position: sticky;
-// 	top: 0px;
-// `;
-
+export const Bannerlogo = styled.img`
+	margin-top: -30px;
+`;
 export const envilop = styled.div`
 	margin: ${props => props.margin};
 	display: ${props => props.display};
@@ -34,7 +33,7 @@ export const envilop = styled.div`
 `;
 export const Wrapper = styled.div`
 	display: flex;
-	background-color: transparent;
+	background-color: #777777;
 	height: 100px;
 	padding-top: 1rem;
 	width: 85%;
@@ -47,6 +46,7 @@ export const Div = styled.div`
 	color: ${props => props.color};
 	flex: ${props => props.flex};
 	font-size: ${props => props.fontSize};
+	padding-top: ${props => props.paddingTop};
 `;
 export const Nav = styled.nav`
 	color: white;
@@ -71,6 +71,7 @@ export const bannerContent = styled.div`
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	z-index: 5;
 `;
 
 export const Para = styled.p`
