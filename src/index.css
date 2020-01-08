@@ -15,3 +15,7 @@ code {
 	height: 400px;
 	background: linear-gradient(135deg, rgb(96, 108, 136) 0%, rgb(63, 76, 107) 100%);
 }
+.signUpParticleJs {
+	height: 100vh;
+	background: linear-gradient(135deg, rgb(96, 108, 136) 0%, rgb(63, 76, 107) 100%);
+}

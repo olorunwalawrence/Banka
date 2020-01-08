@@ -1,6 +1,7 @@
 import React from 'react';
 import * as Nav from './nav.style';
 import Scrollspy from 'react-scrollspy';
+import { Link } from 'react-router-dom';
 
 export const Navigation = ({ id }) => {
 	return (
@@ -23,6 +24,9 @@ export const Navigation = ({ id }) => {
 						</Nav.LI>
 						<Nav.LI>
 							<Nav.link href="#sec_4">About us</Nav.link>
+						</Nav.LI>
+						<Nav.LI>
+							<Link to="/signup">Sign up</Link>
 						</Nav.LI>
 					</Nav.Nav>
 				</Scrollspy>
