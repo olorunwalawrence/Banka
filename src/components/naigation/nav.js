@@ -28,6 +28,9 @@ export const Navigation = ({ id }) => {
 						<Nav.LI>
 							<Link to="/signup">Sign up</Link>
 						</Nav.LI>
+						<Nav.LI>
+							<Link to="/dashboard">Dashboard</Link>
+						</Nav.LI>
 					</Nav.Nav>
 				</Scrollspy>
 			</Nav.Wrapper>

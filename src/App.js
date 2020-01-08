@@ -6,6 +6,7 @@ import { GlobalStyles } from './global';
 import { theme } from './themes';
 import { Banka } from './screen/banka';
 import { SignupAuth } from './pages/signup';
+import { DashBoardPage } from './pages/UserDashboard';
 function App() {
 	return (
 		<Router>
@@ -15,6 +16,7 @@ function App() {
 					<Switch>
 						<Route path="/" exact component={Banka} />
 						<Route path="/signup" exact component={SignupAuth} />
+						<Route path="/dashboard" exact component={DashBoardPage} />
 					</Switch>
 				</>
 			</ThemeProvider>
