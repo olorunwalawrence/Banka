@@ -34,7 +34,7 @@ export const BankinInfo = ({ id }) => {
 			<section>
 				<BI.secondSectionWrapper>
 					<BI.Animation>
-						<Particle>
+						<Particle className="particleJs">
 							<BI.Animationcard>
 								<BI.Img src={require('../../asset/images/download.png')} />
 							</BI.Animationcard>
