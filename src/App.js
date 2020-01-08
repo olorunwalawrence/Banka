@@ -4,10 +4,8 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import { ThemeProvider } from 'styled-components';
 import { GlobalStyles } from './global';
 import { theme } from './themes';
-
 import { Banka } from './screen/banka';
 import { SignupAuth } from './pages/signup';
-
 function App() {
 	return (
 		<Router>

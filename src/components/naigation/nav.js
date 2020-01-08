@@ -11,13 +11,13 @@ export const Navigation = ({ id }) => {
 					<Nav.Bannerlogo src={require('../../asset/images/borrowit.png')} />
 				</Nav.Div>
 
-				<Scrollspy items={['sec_1', 'sect_2', 'sec_3', 'sec_4', 'sec_5']} currentClassName="is-current">
+				<Scrollspy items={['sec_1', '/sect_2', 'sec_3', 'sec_4', 'sec_5']} currentClassName="is-current">
 					<Nav.Nav>
 						<Nav.LI>
 							<Nav.link href="#sec_1">Home</Nav.link>
 						</Nav.LI>
 						<Nav.LI>
-							<Nav.link href="#sec_2">Login</Nav.link>
+							<Nav.link href="#/sec_2">Login</Nav.link>
 						</Nav.LI>
 						<Nav.LI>
 							<Nav.link href="#sec_3">Features</Nav.link>

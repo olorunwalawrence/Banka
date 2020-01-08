@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 
 import { useHistory } from 'react-router-dom';
 
@@ -13,6 +13,10 @@ export const SignupAuthentication = () => {
 
 	const handleChange = e => setAuthSignUp({ ...authSignup, [e.target.name]: e.target.value });
 
+	const OnClickSignin = () => {
+		const link = '#sec_2';
+		localStorage.setItem('link', link);
+	};
 	return (
 		<SA.signupContainer>
 			<SA.SignupLeft>
@@ -28,7 +32,10 @@ export const SignupAuthentication = () => {
 			</SA.SignupLeft>
 			<SA.Signupright>
 				<SA.SignupHeadText>
-					Already have an account? <Link to="/login">Signin </Link>
+					Already have an account?{' '}
+					<Link to="/" onClick={OnClickSignin}>
+						Signin{' '}
+					</Link>
 				</SA.SignupHeadText>
 				<SA.Form>
 					<SA.formRow className="form-row">
