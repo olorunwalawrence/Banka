@@ -12,6 +12,7 @@ export const Menu = ({ open }) => {
 			<Link to="/acoount">Create Account</Link>
 			<Link to="/profile">View Profile</Link>
 			<Link to="/transactions">Transaction History</Link>
+			<Link to="/">Home</Link>
 		</StyledMenu>
 	);
 };

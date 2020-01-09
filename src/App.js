@@ -8,6 +8,7 @@ import { Banka } from './screen/banka';
 import { SignupAuth } from './pages/signup';
 import { DashBoardPage } from './pages/UserDashboard';
 import { Account } from './pages/userAccount';
+import {Profile } from './pages/profile';
 function App() {
 	return (
 		<Router>
@@ -19,6 +20,7 @@ function App() {
 						<Route path="/signup" exact component={SignupAuth} />
 						<Route path="/dashboard" exact component={DashBoardPage} />
 						<Route path="/acoount" exact component={Account} />
+						<Route path="/profile" exact component={Profile} />
 					</Switch>
 				</>
 			</ThemeProvider>
