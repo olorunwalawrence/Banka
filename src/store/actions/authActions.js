@@ -1,7 +1,5 @@
-import axios from 'axios';
 import Toastr from 'toastr';
 // import setAuthToken from '../../utils/setAuthToken';
-import { Spinner } from '../../utils/spinner';
 import { SET_CURRENT_USER, PROCESSENDED, PROCESSING } from '../actionTypes/types';
 import { handleErr } from '../../utils/errorValidation';
 import { Axios } from '../../utils/axios';
