@@ -9,9 +9,10 @@ export const Menu = ({ open }) => {
 				<AvaterName>olorunwa lawrence</AvaterName>
 			</Container>
 			<Link to="/dashboard">Dashboard</Link>
-			<Link to="/profile">Create Account</Link>
-			<Link to="/account">View Profile</Link>
-			<Link to="/account">Transaction History</Link>
+			<Link to="/acoount">Create Account</Link>
+			<Link to="/profile">View Profile</Link>
+			<Link to="/transactions">Transaction History</Link>
+			<Link to="/">Home</Link>
 		</StyledMenu>
 	);
 };

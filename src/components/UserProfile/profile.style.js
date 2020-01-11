@@ -52,8 +52,8 @@ export const AcctInfo = styled.div`
 	justify-content: space-around;
 `;
 export const AccountInfoHeader = styled.h5`
-	padding-top: 10px;
 	color: cadetblue;
+	padding: 10px;
 `;
 export const accountName = styled.div`
 	height: 120px;
