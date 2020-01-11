@@ -5,6 +5,18 @@ export const signupContainer = Style.div`
 
 `;
 
+export const spinnerWrapper = Style.div`
+position:fixed;
+top:200px;
+left:45%;
+`;
+
+export const error = Style.span`
+color:red;
+font-size:12px;
+margin-left:0px;
+`;
+
 export const SignupLeft = Style.div`
   flex:1;
   background-size: cover;
@@ -33,13 +45,16 @@ export const Img = Style.img`
 export const Signupright = Style.div`
   flex:1;
 text-align:right;
-padding-right:30px;
+padding-left:20px;
+display:flex;
+flex-direction:column;
+justify-content:center;
 `;
 export const FormInput = Style.input`
 background: #fff;
     border: 1px solid #9a9a9a;
     border-radius: 4px;
-    padding: 19px 4%;
+    padding: 10px 2%;
     margin: 13px 0;
     font-size: 16px;
     line-height: 22px;
@@ -48,16 +63,18 @@ background: #fff;
     position: relative;
 `;
 export const formRow = Style.div``;
-export const formGroup = Style.div``;
+export const formGroup = Style.div`
+text-align:left;
+`;
 
 export const Form = Style.form`
   margin:1px auto;
-  width:80%;
+  width:90%;
  
 `;
 export const SiteLogo = Style.div``;
 export const SignupBotton = Style.button`
-  padding:20px;
+  padding:12px;
   width:90%;
   background: #174a41;
   color:#fff;
