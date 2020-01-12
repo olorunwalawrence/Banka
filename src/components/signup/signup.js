@@ -113,7 +113,7 @@ export const SignupAuthentication = () => {
 						</SA.formGroup>
 						<SA.formGroup className="form-group col-md-6">
 							<SA.FormInput
-								ref={register({ required: true, maxLength: 8 })}
+								ref={register({ required: true, maxLength: 20 })}
 								type="password"
 								name="password"
 								placeholder="Password"
@@ -124,7 +124,7 @@ export const SignupAuthentication = () => {
 						</SA.formGroup>
 						<SA.formGroup className="form-group col-md-6">
 							<SA.FormInput
-								ref={register({ required: true, maxLength: 8 })}
+								ref={register({ required: true, maxLength: 20 })}
 								type="password"
 								name="confirmpassword"
 								placeholder=" Confirm Password"

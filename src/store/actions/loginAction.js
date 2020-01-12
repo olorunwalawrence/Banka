@@ -27,14 +27,11 @@ export const LoginUserAuth = (userData, history) => dispatch => {
 	dispatch(setAuthLoading());
 	Axios('http://localhost:8080/api/v1/auth/login', userData, 'POST')
 		.then(res => {
-			console.log(res);
 			const { token } = res.data.data;
 			Toastr.success(res.data.message);
 			localStorage.setItem('jwtToken', token);
-			setAuthToken(token);
-			const decoded = jwt_decode(token);
-			jwt_decode(token);
-			dispatch(setLoginUser(decoded));
+			const Token = setAuthToken(token);
+			dispatch(setLoginUser(Token));
 			dispatch(processEnded());
 			history.push('/dashboard');
 		})

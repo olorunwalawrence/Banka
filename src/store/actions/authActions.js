@@ -1,5 +1,5 @@
 import Toastr from 'toastr';
-// import setAuthToken from '../../utils/setAuthToken';
+import setAuthToken from '../../utils/setAuthToken';
 import { SET_CURRENT_USER, PROCESSENDED, PROCESSING } from '../actionTypes/types';
 import { handleErr } from '../../utils/errorValidation';
 import { Axios } from '../../utils/axios';
@@ -25,8 +25,11 @@ const registerUser = (userData, history) => dispatch => {
 	dispatch(setAuthLoading());
 	Axios('http://localhost:8080/api/v1/auth/signup', userData, 'POST')
 		.then(res => {
-			dispatch(auth_user(res.data));
+			const { token } = res.data.data;
 			Toastr.success(res.data.message);
+			localStorage.setItem('jwtToken', token);
+			setAuthToken(token);
+			dispatch(auth_user(res.data));
 			dispatch(processEnded());
 			history.push('/dashboard');
 		})
