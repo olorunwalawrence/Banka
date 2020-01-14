@@ -7,13 +7,13 @@ export const DashboardWrapper = styled.div`
 
 export const LeftSideBar = styled.div`
 	flex: 0.5;
-	height: 100vh;
+	height: auto;
 	background: #0d0c1d;
 `;
 export const RightSection = styled.div`
 	flex: 2;
 	background: #f5f7f9;
-	height: 100vh;
+	height: auto;
 `;
 export const Div = styled.div`
 	text-transform: capitalize;
@@ -89,4 +89,20 @@ export const recentTrans = styled.div`
 export const Recent = styled.h4`
 	margin: 40px;
 	color: teal;
+`;
+
+export const profileInfo = styled.div`
+	padding: 40px;
+	display: flex;
+`;
+
+export const info = styled.div`
+	text-align: center;
+	flex: 1;
+`;
+export const span = styled.p`
+	width: 100px;
+	flex: 1;
+	color: teal;
+	margin-top: 30px;
 `;

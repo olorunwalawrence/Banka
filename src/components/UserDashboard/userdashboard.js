@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { useSelector } from 'react-redux';
 import * as DS from './userdashboard.style';
 import { HarmBurger } from '../hambugger/hamBurger';
 import { RecentTransactions } from '../../asset/data';
@@ -24,6 +24,9 @@ export const DashBoard = () => {
 			text: 'Account Balance',
 		},
 	];
+
+	const profileData = useSelector(state => state.ViewProfile.data);
+
 	return (
 		<DS.DashboardContainer>
 			<DS.DashboardWrapper>
@@ -43,29 +46,26 @@ export const DashBoard = () => {
 
 						<DS.AccountCreationInfo>
 							<DS.Header>you are welcome olorunwa lawrence </DS.Header>
-							<DS.Para>
-								{' '}
-								we noticed you have not created an account yet kindly click the bottom below to create
-								an account
-							</DS.Para>
+							<DS.Para> Thank you for having an account with us</DS.Para>
 						</DS.AccountCreationInfo>
 					</DS.containerAcct>
+					{profileData && (
+						<DS.AcctInfo>
+							<DS.accountName>
+								<DS.AccountInfoHeader>Account Name</DS.AccountInfoHeader>
+								{profileData.firstname} {profileData.lastname}
+							</DS.accountName>
+							<DS.accountNumber>
+								<DS.AccountInfoHeader>Account Number</DS.AccountInfoHeader>
+								{profileData.accountnumber}
+							</DS.accountNumber>
 
-					<DS.AcctInfo>
-						<DS.accountName>
-							<DS.AccountInfoHeader>Account Name</DS.AccountInfoHeader>
-							olorunwa lawrence
-						</DS.accountName>
-						<DS.accountNumber>
-							<DS.AccountInfoHeader>Account Number</DS.AccountInfoHeader>
-							1234567898765432
-						</DS.accountNumber>
-
-						<DS.accountBalance>
-							<DS.AccountInfoHeader> Account Balance</DS.AccountInfoHeader>
-							#500,0000
-						</DS.accountBalance>
-					</DS.AcctInfo>
+							<DS.accountBalance>
+								<DS.AccountInfoHeader> Account Balance</DS.AccountInfoHeader>#
+								{profileData.currentbalance}
+							</DS.accountBalance>
+						</DS.AcctInfo>
+					)}
 
 					<DS.Recent>Recent Transactions</DS.Recent>
 					<DS.recentTrans>

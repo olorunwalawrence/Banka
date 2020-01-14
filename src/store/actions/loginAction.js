@@ -32,6 +32,7 @@ export const LoginUserAuth = (userData, history) => dispatch => {
 			localStorage.setItem('jwtToken', token);
 			const Token = setAuthToken(token);
 			dispatch(setLoginUser(Token));
+
 			dispatch(processEnded());
 			history.push('/dashboard');
 		})

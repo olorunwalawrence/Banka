@@ -2,7 +2,7 @@ import { SETAUTOFILLINFO, PROCESSENDED, PROCESSING } from '../actionTypes/types'
 
 const initialState = {
 	isAuthenticated: false,
-	user: {},
+	user:null,
 	loading: false,
 	isLoggedIn: false,
 };
