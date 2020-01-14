@@ -4,18 +4,11 @@ import setAuthToken from '../../utils/setAuthToken';
 import { CREATEACCOUNT, PROCESSENDED, PROCESSING } from '../actionTypes/types';
 import { handleErr } from '../../utils/errorValidation';
 import { Axios } from '../../utils/axios';
+import { processEnded, setLoadingProcess } from '../../utils/loading';
 
 export const createAcct = acct => ({
 	type: CREATEACCOUNT,
 	payload: acct,
-});
-
-export const setLoadingProcess = () => ({
-	type: PROCESSING,
-});
-
-export const processEnded = () => ({
-	type: PROCESSENDED,
 });
 
 const AccountCreation = (userData, history) => dispatch => {

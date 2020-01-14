@@ -5,6 +5,7 @@ import { Navigation } from '../components/naigation/nav';
 import { LoginAuth } from '../components/loginAuth/login';
 import { BankinInfo } from '../components/bankingInfo/info';
 import { Footer } from '../components/footer/footer';
+import { Link } from 'react-router-dom';
 
 export const Banka = () => {
 	const login = useRef(null);

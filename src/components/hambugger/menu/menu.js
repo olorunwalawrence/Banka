@@ -11,6 +11,7 @@ export const Menu = ({ open }) => {
 	const signOut = e => {
 		e.preventDefault();
 		localStorage.clear('jwtToken');
+
 		setLogout(true);
 		history.push('/');
 	};

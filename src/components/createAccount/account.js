@@ -5,7 +5,7 @@ import { useForm } from 'react-hook-form';
 import * as UAC from './account.style';
 import * as SA from '../signup/signup.style';
 import { HarmBurger } from '../hambugger/hamBurger';
-import { AutoFill } from '../../store/actions/autoFillInfo';
+
 import AccountCreation from '../../store/actions/creeateAcctaction';
 import { Spinner } from '../../utils/spinner';
 export const CreateAccount = () => {
@@ -21,9 +21,6 @@ export const CreateAccount = () => {
 
 	// auto fill user signupinfo on componentdidmount
 	const dispatch = useDispatch();
-	useEffect(() => {
-		dispatch(AutoFill());
-	}, [dispatch]);
 
 	const loading = useSelector(state => state.BankAccountReducer.loaading);
 
